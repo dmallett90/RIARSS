@@ -4,53 +4,48 @@
 }
 
 
-
+ /* Font and bg styling for website*/
 body {
 	font-family: 'Montserrat', sans-serif;
 	background-color:#252525;
 }
-
+ /* Large heading style */
 h1 {
 	color:#eaeaea;	
 }
-
+ /* Hot Medium header container  */
 header {
 
 	width:100%;
 	padding:5px;
 	background-color: #252525;
 	color: #fff;
-
-	
 	font-size:25px;
-
-	
 	top:0px;
 	left:0px;
-
 	text-align:center;
 }
-
+ /* Hot Medium image */
 #headerimg {
 	padding:20px;
 	width:90%;
 	margin:auto;	
 }
-
+ /* Social media links */
 social {
 	padding:0;
 	margin:0;
 	display:relative;	
 	
 }
-
+ /* Social media link list style */
 .socialicons li {
 	padding-left:10px;
 	margin:0;
 	list-style: none;
   	display: inline;	
 }
-
+ /* Footer stlying */
 footer {
 	width:100%;
 	padding:5px;
@@ -65,12 +60,12 @@ footer {
 	z-index:1;
 	box-shadow:5px 5px 5px 5px #535659;
 }
-
+ /* Footer link style */
 footer a {
 	color:#ca752b;
 	text-decoration:none;
 }
-
+ /* Comments */
 #commentscontainer {
 	width:100%;
 	padding:5px;
@@ -85,44 +80,44 @@ footer a {
 	z-index:0;
 	box-shadow:5px 5px 5px 5px #535659;
 }
-
+ /* Main content container */
 main {
 	width:100%;
 	padding:5px;
 	text-align:center;
 	background-color:#252525;
 }
-
+ /* Index page text */
 .big {
 	font-size:25px;
 	margin:75px;
 	color:#eaeaea;
 }
-
+ /* Index page text links */
 .big a {
 	color:#ca752b;
 	text-decoration:none;
 }
-
+ /*Log in and register page text*/
 .big2 {
 	font-size:25px;
 	color:#eaeaea;
 	padding-top:75px;
 }
-
+ /* Button text*/
 .big3 {
 	font-size:25px;
 	color:#ca752b;
 	
 }
-
+ /* Button link styling */
 .big3 a {
 	color:#ca752b;
 	text-decoration:none;	
 }
 
 
-
+ /* Form */
 form input {
 
 	height:40px;
@@ -130,7 +125,7 @@ form input {
 	padding:2px;
 
 }
-
+ /* Login button style */
 #login {
 	font-family: 'Montserrat', sans-serif;
     font-size: 25px;
@@ -138,7 +133,7 @@ form input {
     border: 0;
     color: #ca752b;	
 }
-
+ /* Register button style */
 #register {
 	font-family: 'Montserrat', sans-serif;
     font-size: 25px;
@@ -146,7 +141,7 @@ form input {
     border: 0;
     color: #ca752b;	
 }
-
+ /* Register form */
 .username {
 	border-radius: 10px;
     border: 0;
@@ -179,7 +174,7 @@ form input {
 	padding-left:5px;		
 }
 
-
+ /* Positioning of loding gif */
 #loading {
 
 	display:none;
@@ -189,7 +184,7 @@ form input {
 	margin-top:-20px;
 	margin-left: -60px;
 }
-
+ /* Styling for RSS feed title */
 .subrow {
 
 	width: 90%;
@@ -219,12 +214,12 @@ form input {
 	color: #eaeaea;
     text-decoration: none;	
 } 
-
+ /* Feedback messages from forms */
 #messages {
 	min-height:10px;
 	color:#e33d3d;
 }
-
+ /* RSS feed content */
 .rssitem {
 	width: 90%;
 	margin:0 auto;
@@ -235,12 +230,12 @@ form input {
 	color:#eaeaea;
 	
 }
-
+ /* RSS feed content links*/
 .rssitem a {
 	color: #ca752b;
     text-decoration: none;		
 }
-
+ /*Comment open button */
 #commentslink {
 	color: #ca752b;
     text-decoration: none;	
@@ -250,7 +245,7 @@ form input {
 	list-style:none;	
 }
 
-
+ /* Comment section */
 #comcontent {
 	background-color: #252525;
 	width:90%;
