@@ -3,8 +3,10 @@
 	margin:0;
 }
 
+
+
 body {
-	font-family:Montserrat;
+	font-family: 'Montserrat', sans-serif;
 	background-color:#252525;
 }
 
@@ -130,7 +132,7 @@ form input {
 }
 
 #login {
-	font-family: Montserrat;
+	font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     background-color: transparent;
     border: 0;
@@ -138,7 +140,7 @@ form input {
 }
 
 #register {
-	font-family: Montserrat;
+	font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     background-color: transparent;
     border: 0;
@@ -148,7 +150,7 @@ form input {
 .username {
 	border-radius: 10px;
     border: 0;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     width: 200px;
 	padding-left:5px;	
 }
@@ -156,7 +158,7 @@ form input {
 .password {
 	border-radius: 10px;
     border: 0;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     width: 200px;
 	padding-left:5px;		
 }
@@ -164,7 +166,7 @@ form input {
 .fname {
 	border-radius: 10px;
     border: 0;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     width: 200px;
 	padding-left:5px;		
 }
@@ -172,7 +174,7 @@ form input {
 .sname {
 	border-radius: 10px;
     border: 0;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     width: 200px;
 	padding-left:5px;		
 }
@@ -224,7 +226,7 @@ form input {
 }
 
 .rssitem {
-	width: 60%;
+	width: 90%;
 	margin:0 auto;
 	background-color:#252525;
 	border-bottom:1px #ccc solid;
@@ -305,23 +307,24 @@ form input {
 }
 
 #commentbtn {
-	width: 10%;
-    position: relative;
-    bottom: 35px;
+	bottom: 35px;
     background-color: transparent;
     border: 0;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     color: #ca752b;
 }
 
 #clearbtn {
-	width: 10%;
-    position: relative;
     bottom: 35px;
     background-color: transparent;
     border: 0;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     color: #ca752b;
 	bottom:25px;
 	left:40.5%;
+}
+
+#commentbuttons {
+	width:90%;
+	margin:auto;	
 }
