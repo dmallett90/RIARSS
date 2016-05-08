@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- content security for android -->
+		<!-- look here: http://stackoverflow.com/questions/30212306/no-content-security-policy-meta-tag-found-error-in-my-phonegap-application -->
+		<meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; script-src * 'unsafe-inline';">
+		<title>RSS Feed App</title>
+		<link href="mainstyle.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript" src="js/functions.js"></script>
+		<script>
+			$(document).ready(function() {
+
+				 $.support.cors = true;
+
+				$("#login").click(function() {
+
+					username = $("[name='username']").val();
+					password = $("[name='password']").val();
+
+					if(username=="") {
+						$("#messages").html("Please enter a username.");
+						return false;
+					}
+
+					if(password=="") {
+						$("#messages").html("Please enter a password.");
+						return false;
+					}
+
+					$.ajax({
+						beforeSend: function() {
+							$("#loading").show();
+						},
+						complete: function() {
+							$("#loading").hide(90);
+						},
+						type: 'GET',
+						dataType: "jsonp",
+						jsonp: "callback",
+						url: "http://ria.danmallett.co.uk/mng_user.php?action=login&l_username=" + username + "&l_password=" + password,
+						success: function(data) {
+
+
+							responseString="";
+
+							$.each(data, function (index, item) {
+							    // Use item in here
+							    responseString = item;
+							});
+
+							if(responseString.indexOf("LOGGEDIN")>-1) {
+
+								//get rest of data after prefix (LOGGEDIN:)
+								//the number is the character position to start from, we cut off the prefix
+								userid = responseString.substring(9);
+
+								location.href="subscriptions.html?userid=" + userid;
+
+							}
+							if(responseString.indexOf("NOTFOUND")>-1) {
+
+								//get rest of data after prefix (NOTFOUND:)
+								//the number is the character position to start from, we cut off the prefix
+								message = responseString.substring(9);
+
+								$("#messages").html(message);
+
+							}
+							if(responseString.indexOf("INVALID")>-1) {
+
+								//get rest of data after prefix (INVALID:)
+								//the number is the character position to start from, we cut off the prefix
+								message = responseString.substring(8);
+
+								$("#messages").html(message);
+
+							}
+						},
+						error: function (jqXHR, textStatus, errorThrown) {
+							if (jqXHR.status == 500) {
+				                $("#messages").html('Internal error: ' + jqXHR.responseText);
+				            } else {
+				                $("#messages").html('Unexpected error.');
+				            }
+						}
+					});
+
+
+
+				});
+
+			});
+		</script>
+	</head>
+
+	<body>
+
+			<header>
+        
+        <section id="headerimg"><a href="index.html"><img src="images/headerimg.png" width="60%" alt="Hot Medium"><a></section>
+        
+        <section id="social">
+        <ul class="socialicons">
+			<li><a href="https://www.twitter.com/"><img src="images/twitter.png" width="25" height="25" alt="twitter"></a></li>
+			<li><a href="https://www.facebook.com/"><img src="images/facebook.png" width="25" height="25" alt="Facebook"></a></li>
+			<li><a href="https://www.instagram.com/"><img src="images/instagram.png" width="25" height="25" alt="Instagram"></a></li>
+		</ul>
+        </section>
+        
+        </header>
+
+		<main>
+
+			<p class="big2">Please enter your details below</p>
+
+			<form>
+				<input type="text" name="username" placeholder="Username" class="username"><br />
+  				<input type="password" name="password" placeholder="Password" class="password"><br />
+                    <div id="messages">
+                    
+                    </div>
+            	<input type="button" value="Log In" id="login">
+                
+                <p class="big3"><a href="register.html">Sign Up</a></p>
+                        
+			</form>
+
+			
+
+			
+
+		</main>
+
+
+		<img src="images/483.gif" id="loading" />
+
+
+	</body>
+</html>

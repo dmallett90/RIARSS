@@ -1,0 +1,327 @@
+* {
+	padding:0;
+	margin:0;
+}
+
+body {
+	font-family:Montserrat;
+	background-color:#252525;
+}
+
+h1 {
+	color:#eaeaea;	
+}
+
+header {
+
+	width:100%;
+	padding:5px;
+	background-color: #252525;
+	color: #fff;
+
+	
+	font-size:25px;
+
+	
+	top:0px;
+	left:0px;
+
+	text-align:center;
+}
+
+#headerimg {
+	padding:20px;
+	width:90%;
+	margin:auto;	
+}
+
+social {
+	padding:0;
+	margin:0;
+	display:relative;	
+	
+}
+
+.socialicons li {
+	padding-left:10px;
+	margin:0;
+	list-style: none;
+  	display: inline;	
+}
+
+footer {
+	width:100%;
+	padding:5px;
+	height:20px;
+	background-color: #252525;
+	color: #000;
+	font-size:15px;
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	text-align:center;
+	z-index:1;
+	box-shadow:5px 5px 5px 5px #535659;
+}
+
+footer a {
+	color:#ca752b;
+	text-decoration:none;
+}
+
+#commentscontainer {
+	width:100%;
+	padding:5px;
+	height:460px;
+	background-color: #252525;
+	color: #fff;
+	font-size:15px;
+	position:fixed;
+	bottom:-440px;
+	left:0px;
+	text-align:center;
+	z-index:0;
+	box-shadow:5px 5px 5px 5px #535659;
+}
+
+main {
+	width:100%;
+	padding:5px;
+	text-align:center;
+	background-color:#252525;
+}
+
+.big {
+	font-size:25px;
+	margin:75px;
+	color:#eaeaea;
+}
+
+.big a {
+	color:#ca752b;
+	text-decoration:none;
+}
+
+.big2 {
+	font-size:25px;
+	color:#eaeaea;
+	padding-top:75px;
+}
+
+.big3 {
+	font-size:25px;
+	color:#ca752b;
+	
+}
+
+.big3 a {
+	color:#ca752b;
+	text-decoration:none;	
+}
+
+
+
+form input {
+
+	height:40px;
+	margin:25px;
+	padding:2px;
+
+}
+
+#login {
+	font-family: Montserrat;
+    font-size: 25px;
+    background-color: transparent;
+    border: 0;
+    color: #ca752b;	
+}
+
+#register {
+	font-family: Montserrat;
+    font-size: 25px;
+    background-color: transparent;
+    border: 0;
+    color: #ca752b;	
+}
+
+.username {
+	border-radius: 10px;
+    border: 0;
+    font-family: Montserrat;
+    width: 200px;
+	padding-left:5px;	
+}
+
+.password {
+	border-radius: 10px;
+    border: 0;
+    font-family: Montserrat;
+    width: 200px;
+	padding-left:5px;		
+}
+
+.fname {
+	border-radius: 10px;
+    border: 0;
+    font-family: Montserrat;
+    width: 200px;
+	padding-left:5px;		
+}
+
+.sname {
+	border-radius: 10px;
+    border: 0;
+    font-family: Montserrat;
+    width: 200px;
+	padding-left:5px;		
+}
+
+
+#loading {
+
+	display:none;
+	position:fixed;
+	top:50%;
+	left:50%;
+	margin-top:-20px;
+	margin-left: -60px;
+}
+
+.subrow {
+
+	width: 90%;
+	margin:0 auto;
+	background-color:#252525;
+	border-bottom:1px #ccc solid;
+	font-size:50px;
+	min-height:150px;
+	padding-top:25px;
+}
+
+.subrow .sublinkbar {
+
+	font-size:25px;
+	padding:10px;
+
+}
+
+.subrow .sublinkbar a {
+	color:#ca752b;
+	text-decoration:none;
+	font-size:15px;
+	text-transform:uppercase;	
+}
+
+.subrow .rsstitle a {
+	color: #eaeaea;
+    text-decoration: none;	
+} 
+
+#messages {
+	min-height:10px;
+	color:#e33d3d;
+}
+
+.rssitem {
+	width: 60%;
+	margin:0 auto;
+	background-color:#252525;
+	border-bottom:1px #ccc solid;
+	font-size:15px;
+	min-height:200px;
+	color:#eaeaea;
+	
+}
+
+.rssitem a {
+	color: #ca752b;
+    text-decoration: none;		
+}
+
+#commentslink {
+	color: #ca752b;
+    text-decoration: none;	
+}
+
+.crp_related ul {
+	list-style:none;	
+}
+
+
+#comcontent {
+	background-color: #252525;
+	width:90%;
+	height:300px;
+	margin:20px auto;
+	color:#000;
+	overflow: scroll;
+}
+
+.comment {
+	background-color:#252525;
+	width:90%;
+	margin:0 auto;
+	padding:5px;
+	border-bottom:1px #ccc solid;
+	color:#eaeaea;
+}
+
+.comdate {
+	font-style: italic;
+	font-size:80%;
+	width:90%;
+	margin:0 auto;
+	padding:0 5px;
+	background-color:#252525;
+	color:#535659;
+}
+
+.comlinks {
+	font-size:90%;
+	width:90%;
+	margin:0 auto;
+	padding:0 5px;
+	background-color:#252525;
+}
+
+.updatecom {
+	color: #ca752b;
+    text-decoration: none;		
+}
+
+.deletecom {
+	color: #ca752b;
+    text-decoration: none;		
+}
+
+#commentbox {
+	width:80%;
+	position:relative;
+	bottom:0;
+	height:50px;
+	padding: 5px;
+	border-radius:10px;
+}
+
+#commentbtn {
+	width: 10%;
+    position: relative;
+    bottom: 35px;
+    background-color: transparent;
+    border: 0;
+    font-family: Montserrat;
+    color: #ca752b;
+}
+
+#clearbtn {
+	width: 10%;
+    position: relative;
+    bottom: 35px;
+    background-color: transparent;
+    border: 0;
+    font-family: Montserrat;
+    color: #ca752b;
+	bottom:25px;
+	left:40.5%;
+}
